@@ -8,9 +8,14 @@ const PORT = process.env.PORT || 5000;
 
 app.use(cors({
   origin: [
-    "chrome-extension:",
-    "http://localhost"
-  ]
+    "chrome-extension://djkcgbhamlefinfahcpahfbjekgglkmn",
+    "http://localhost",
+    "http://localhost:3000",
+    "http://localhost:5173"
+  ],
+  methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+  allowedHeaders: ["Content-Type", "Authorization"],
+  credentials: true
 }));
 
 app.use(express.json({ limit: "100kb" }));
