@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 380px;
+    margin: 0;
+    background: #f8fafc;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+}
+
+.container {
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 22px;
+}
+
+.logo {
+    background: #2563eb;
+    color: white;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 24px;
+}
+
+h2, h3, h4, p {
+    margin-top: 0;
+}
+
+header p {
+    color: #64748b;
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 12px 0 7px;
+    font-size: 13px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 13px;
+    margin-top: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: wait;
+}
+
+#results {
+    margin-top: 20px;
+    padding: 15px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+}
+
+#classification {
+    font-size: 19px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.safe {
+    color: #16a34a;
+}
+
+.spam {
+    color: #d97706;
+}
+
+.phishing {
+    color: #dc2626;
+}
+
+.error {
+    color: #dc2626;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+ul {
+    padding-left: 18px;
+    overflow-wrap: anywhere;
+}
+
+li {
+    font-size: 12px;
+    margin-bottom: 7px;
+}
+
+pre {
+    white-space: pre-wrap;
+    font-size: 11px;
+    overflow-wrap: anywhere;
+}
+
+.url-result {
+    padding: 8px;
+    margin: 5px 0;
+    border-radius: 6px;
+    background: #f1f5f9;
+    font-size: 12px;
+    overflow-wrap: anywhere;
+}
