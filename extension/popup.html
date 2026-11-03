@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MailGuard AI</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <div class="logo">🛡️</div>
+            <div>
+                <h2>MailGuard AI</h2>
+                <p>Email Security Scanner</p>
+            </div>
+        </header>
+
+        <label for="email">Email Content</label>
+        <textarea
+            id="email"
+            placeholder="Paste your email here..."
+        ></textarea>
+
+        <button id="scanBtn">Scan Email</button>
+
+        <div id="loading" hidden>
+            Analyzing email and URLs...
+        </div>
+
+        <section id="results" hidden>
+            <h3>Analysis Result</h3>
+
+            <div id="classification"></div>
+
+            <p id="risk"></p>
+
+            <h4>Extracted URLs</h4>
+            <ul id="urlList"></ul>
+
+            <h4>Email Model</h4>
+            <pre id="emailDetails"></pre>
+
+            <h4>URL Analysis</h4>
+            <div id="urlDetails"></div>
+        </section>
+
+        <p id="error" class="error"></p>
+
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
