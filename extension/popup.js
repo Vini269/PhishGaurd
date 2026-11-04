@@ -23,7 +23,7 @@ async function scanEmail() {
 
     try {
         const response = await fetch(
-            "http://localhost:5000/api/scan",
+            "https://backend-amber-omega-23.vercel.app/api/scan",
             {
                 method: "POST",
                 headers: {
